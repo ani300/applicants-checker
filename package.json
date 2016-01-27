@@ -1,0 +1,25 @@
+{
+  "name": "applicants-checker",
+  "version": "1.0.0",
+  "description": "A small webapp to rate applicants for HackUPC",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ani300/applicants-checker.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ani300/applicants-checker/issues"
+  },
+  "homepage": "https://github.com/ani300/applicants-checker#readme",
+  "dependencies": {
+    "body-parser": "^1.14.2",
+    "express": "^4.13.4",
+    "forms": "^1.1.4",
+    "jade": "^1.11.0"
+  }
+}
