@@ -3,6 +3,7 @@ var app      = express();                               // create our app w/ exp
 var bodyParser = require('body-parser');    // pull information from HTML POST (express4)
 
 var routes = require('./routes/route');
+var apis = require('./routes/api');
 
 app.use(express.static(__dirname + '/public'));                 // set the static files location /public/img will be /img for users
 app.use(bodyParser.urlencoded({'extended':'true'}));            // parse application/x-www-form-urlencoded
@@ -16,3 +17,4 @@ app.listen(8080);
 console.log("App listening on port 8080");
 
 app.use('/', routes);
+app.use('/api/', apis);
